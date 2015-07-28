@@ -1,0 +1,3 @@
+com/proquest/intota/v2/aws_kinesis_logback/BlockFastProducerPolicy.class
+com/proquest/intota/v2/aws_kinesis_logback/KinesisAppender.class
+com/proquest/intota/v2/aws_kinesis_logback/AsyncPutCallStatsReporter.class

@@ -1,0 +1,3 @@
+/Library/WebServer/Documents/aws-kinesis-logback/src/main/java/com/proquest/intota/v2/aws_kinesis_logback/BlockFastProducerPolicy.java
+/Library/WebServer/Documents/aws-kinesis-logback/src/main/java/com/proquest/intota/v2/aws_kinesis_logback/KinesisAppender.java
+/Library/WebServer/Documents/aws-kinesis-logback/src/main/java/com/proquest/intota/v2/aws_kinesis_logback/AsyncPutCallStatsReporter.java
