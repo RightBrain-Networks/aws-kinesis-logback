@@ -1,4 +1,4 @@
-package com.proquest.intota.v2.aws_kinesis_logback;
+package com.rightbrainnetworks.aws_kinesis_logback;
 
 import org.joda.time.DateTime;
 import org.joda.time.Period;
@@ -33,7 +33,7 @@ public class AsyncPutCallStatsReporter implements AsyncHandler<PutRecordRequest,
    * to Kinesis. These logs would end up in the application log if configured
    * properly.
    */
-  @Override
+ // @Override
   public void onError(Exception exception) {
     failedRequestCount++;
     LOGGER.error("Failed to publish a log entry to kinesis using appender: " + appenderName, exception);
@@ -44,7 +44,7 @@ public class AsyncPutCallStatsReporter implements AsyncHandler<PutRecordRequest,
    * Though this is not too useful for production use cases, it provides a good
    * debugging tool while tweaking parameters for the appender.
    */
-  @Override
+  //@Override
   public void onSuccess(PutRecordRequest request, PutRecordResult result) {
     successfulRequestCount++;
     if (LOGGER.isDebugEnabled() && (successfulRequestCount + failedRequestCount) % 3000 == 0) {

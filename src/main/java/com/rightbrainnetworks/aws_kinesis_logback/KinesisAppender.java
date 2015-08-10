@@ -1,4 +1,4 @@
-package com.proquest.intota.v2.aws_kinesis_logback;
+package com.rightbrainnetworks.aws_kinesis_logback;
 import java.nio.ByteBuffer;
 import java.util.UUID;
 import java.util.concurrent.BlockingQueue;

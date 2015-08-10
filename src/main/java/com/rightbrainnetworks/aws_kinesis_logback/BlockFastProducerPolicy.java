@@ -1,4 +1,4 @@
-package com.proquest.intota.v2.aws_kinesis_logback;
+package com.rightbrainnetworks.aws_kinesis_logback;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * is space in the threadpool's processing queue.
  */
 public final class BlockFastProducerPolicy implements RejectedExecutionHandler {
-  @Override
+ // @Override
   public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
     if (executor.isShutdown()) {
       throw new RejectedExecutionException("Threadpoolexecutor already shutdown");
