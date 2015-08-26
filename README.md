@@ -1,12 +1,11 @@
 ## aws-kinesis-logback ##
 #### Logback spring config file in resources directory ####
 ```
-
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration scan="true">
-<property name="applicationName" value="${appName}"/>
+<property name="applicationName" value="your-application-name"/>
 <property resource="application.properties" />
-<appender name="KINESIS"  class="com.proquest.intota.v2.log.KinesisAppender">
+<appender name="KINESIS"  class="com.rightbrainnetworks.aws_kinesis_logback.KinesisAppender">
     
 <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
   <level>INFO</level>
@@ -27,7 +26,7 @@
 <limit>${limit}</limit>
 </appender>
 
-<logger name = "com.rightbrainnetworks.aws-kinesis-logback" level="INFO">
+<logger name = "com.rightbrainnetworks.aws_kinesis_logback" level="INFO">
   <appender-ref ref="KINESIS"/>
 </logger> 
  
