@@ -1,5 +1,5 @@
 ## aws-kinesis-logback ##
-#### Logback spring config file ####
+#### Logback spring config file in resources directory ####
 ```
 
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -41,13 +41,14 @@
 
 
 ##### Further configs #####
-##### application.properties file in resources directory #####
+
 ##### RBN's kinesis appender can be used with a standalone java application as well, just write values directly in logback config above #####
 
 
 
-
+##### application.properties file in resources directory #####
 ```
+
 streamName = your-aws-kinesis-stream-name
 encoding = UTF-8
 maxRetries = 3
