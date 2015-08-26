@@ -46,7 +46,7 @@
 
 
 
-##### application.properties file in resources directory #####
+######<i> application.properties file in resources directory </i>######
 ```
 
 streamName = your-aws-kinesis-stream-name
@@ -63,7 +63,7 @@ limit = 10
 ##### Further configs #####
 
 ##### Sample AWS credentials file on instance or you may have IAM roles setup on EC2. For more info on setting up aws creds refer to <a href="http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html">AWS api documentation here</a> #####
-##### Sample ~/.aws/credentials file  #####
+###### <i>Sample ~/.aws/credentials file  </i>######
 
 ```
 [default]
