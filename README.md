@@ -43,7 +43,7 @@
 ### Logback configs ###
 ### application.properties file in resources directory ###
 ### You may use RBN's kinesis appender on a standalone application as well
-
+```
 streamName = your-aws-kinesis-stream-name
 encoding = UTF-8
 maxRetries = 3
@@ -53,7 +53,7 @@ region = us-east-1
 userAgentString = kinesis-logback-appender/1.0.1
 keepAliveSeconds = 30
 limit = 10
-
+```
 
 #### Further configs ####
 ### Must have ~/.aws/credentials file on instance otherwise kinesis stream will throw permission exception ####
