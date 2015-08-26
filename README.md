@@ -1,4 +1,4 @@
-### aws-kinesis-logback ###
+## aws-kinesis-logback ##
 #### Logback spring config file ####
 ```
 
@@ -40,9 +40,13 @@
 ```
 
 
-#### Logback configs ####
-#### application.properties file in resources directory ####
-#### You may use RBN's kinesis appender on a standalone application as well ####
+##### Further configs #####
+##### application.properties file in resources directory #####
+##### RBN's kinesis appender can be used with a standalone java application as well, just write values directly in logback config above #####
+
+
+
+
 ```
 streamName = your-aws-kinesis-stream-name
 encoding = UTF-8
@@ -55,10 +59,10 @@ keepAliveSeconds = 30
 limit = 10
 ```
 
-#### Further configs ####
+##### Further configs #####
 
-#### Sample AWS credentials file on instance or you may have IAM roles setup on EC2. For more info on setting up aws creds refer to <a href="http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html">AWS api documentation here</a> ####
-#### Sample ~/.aws/credentials file  ####
+##### Sample AWS credentials file on instance or you may have IAM roles setup on EC2. For more info on setting up aws creds refer to <a href="http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html">AWS api documentation here</a> #####
+##### Sample ~/.aws/credentials file  #####
 
 ```
 [default]
