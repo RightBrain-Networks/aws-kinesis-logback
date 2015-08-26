@@ -56,8 +56,10 @@ limit = 10
 ```
 
 #### Further configs ####
-### Must have ~/.aws/credentials file on instance otherwise kinesis stream will throw permission exception ####
-### Sample AWS CONFIG File on instance or you may have IAM roles setup on EC2. Refer to AWS api documentations <a href="http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html">here</a> ####
+
+### Sample AWS credentials file on instance or you may have IAM roles setup on EC2. For more info on setting up aws creds refer to <a href="http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html">AWS api documentation here</a> ####
+### Sample ~/.aws/credentials file  ####
+
 ```
 [default]
 
